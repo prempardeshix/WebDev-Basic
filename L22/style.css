@@ -1,0 +1,33 @@
+.container {
+  background-color: beige;
+  height: 650px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border: 1px solid purple;
+  /* align-self: center; */
+}
+
+h2,
+p {
+  --primary: purple;
+  color: var(--primary);
+  text-shadow: 2px 2px 4px beige, -3px -3px 30px blue;
+  /* text-shadow: ; */
+}
+
+.box {
+  --primary: purple;
+  background-color: lightgreen;
+  width: 330px;
+  height: 330px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid var(--primary);
+  box-shadow: inset -20px -20px 100px green;
+  /* display: flex; */
+}

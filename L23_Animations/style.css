@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.box {
+  border: 1px solid black;
+  width: 400px;
+  height: 100px;
+  background-color: lightseagreen;
+  border-radius: 30px;
+  margin: 10px;
+  position: relative;
+  animation-name: rightMovement;
+  animation-duration: 5s;
+  /* animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.box2 {
+  border: 1px solid black;
+  width: 400px;
+  height: 100px;
+  background-color: coral;
+  border-radius: 30px;
+  margin: 10px;
+  position: relative;
+  animation-name: leftMovement;
+  animation-duration: 5s;
+  /* animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rightMovement {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    top: 0;
+    left: 1400px;
+  }
+}
+
+@keyframes leftMovement {
+  from {
+    top: 600px;
+    left: 1400px;
+  }
+  to {
+    top: 600px;
+    left: 0;
+  }
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 100%;
+  margin: 10px;
+  position: relative;
+  top: 30vh;
+  left: 950px;
+  animation-name: ballMovement;
+  animation-duration: 10s;
+  /* animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
+  border: 5px solid black;
+}
+
+@keyframes ballMovement {
+  0% {
+    top: 1%;
+    left: 5%;
+  }
+  30% {
+    top: 5%;
+    left: 90%;
+  }
+  60% {
+    top: 70%;
+    left: 10%;
+  }
+  100% {
+    top: 60%;
+    left: 90%;
+  }
+}

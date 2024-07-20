@@ -1,0 +1,35 @@
+ 
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ h1{
+    background-color: aquamarine;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: brown;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+ .firstPara{
+    background-color:beige; 
+    border: solid blue 4px;
+    border-radius: 10px;
+ }
+
+ .secondPara{
+    background-color: brown;
+ }
+
+ .thirdPara{
+    background-color: yellowgreen;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: brown;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+ }

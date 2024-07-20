@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navList {
+  list-style: none;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: none;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+.navContainer {
+  padding: 1.5rem;
+  width: 100vw;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#navTitle {
+  font-size: 2.5rem;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+#navLink {
+  display: flex;
+  gap: 40px;
+}
+
+.footerBox {
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  color: azure;
+  text-align: center;
+  min-height: 25px;
+}
+
+.footerBox p {
+  font-size: 2rem;
+}
+
+.contentBox {
+  width: 60%;
+  margin: auto;
+  padding: 2.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-shadow: 0px 0px 30px black;
+  /* position: relative; */
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* position: relative; */
+}
+
+img {
+  /* position: relative; */
+  height: 300px;
+  width: 250px;
+  border-radius: 30px;
+}
+
+.leftbox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.leftbox h2 {
+  font-size: 1.5rem;
+}
+
+.ingBox {
+  font-size: 1.1rem;
+}
+
+.recipeBox {
+  font-size: 1.1rem;
+}
+
+.rightbox:hover {
+  transform: scale(1.1);
+}
+
+.rightbox {
+  position: relative;
+  /* overflow: hidden; */
+  transition: all 1s linear 0s;
+}
+
+.rightbox .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.475);
+  opacity: 0;
+  transition: all 0.5s linear 0s;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.rightbox .overlay span {
+  color: white;
+}
+
+.rightbox:hover .overlay {
+  opacity: 1;
+}

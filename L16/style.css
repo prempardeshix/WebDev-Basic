@@ -1,0 +1,25 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box{
+    /* box-sizing:content-box; */
+    box-sizing:border-box;
+    border: 1px solid red;
+    height: 300px;
+    width:300px;
+    margin: 25px;
+    padding: 25px;
+}
+
+span{
+    border: solid 2px green;
+    margin: 50px;
+    display: block;
+}
+
+p{
+    display: inline-block;
+}

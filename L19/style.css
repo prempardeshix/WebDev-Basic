@@ -1,0 +1,19 @@
+.img1{
+    float: right;
+    height: 250px;
+    width: 250px;
+}
+
+.img2{
+    float:right;
+    height: 250px;
+    width: 250px;
+    clear: right;
+}
+
+.container{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    overflow: auto;
+}
